@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>2 خرداد 1394: سوال قبل از حذف فاکتور
+4 خرداد 1394: اضافه شدن قابلیت یادگیری قیمت مخصوص مشتری برای کالای خاص
+5 خرداد 1394: اضافه شدن گزینه "اضافه به ابتدا" در فرم فاکتور فروش
+14 خرداد 1394: اضافه شدن قابلیت صدور چک [در حال ساخت]
+17 خرداد 1394: اضافه شدن قابلیت ذخیره وضعیت مالی فاکتور
+5 تیر 1394: اضافه شدن آیکون به برخی دکمه ها
+7 تیر 1394: اصلاح فرمت تاریخ از YY/MM/DD به YYYY/MM/DD
+نوشتن "طلب قبلی" در صفحه چاپ اگر جمع سطر صفر باشد
+اضافه نشدن مقدار "0" به جدول قیمتهای اختصاصی مشتری
+19 تیر 1394: قابلیت جست و جو در لیست مشتریان. نمایش یا عدم نمایش قیمت خرید و قیمت فروش در لیست کالا
+27 تیر 1394: مهاجرت از Visual Studio 2008 به Visual Studio 2015 
+27 تیر 1394: مهاجرت از SQL Server 2008 به SQL Server 2014
+4 مرداد 1394: اضافه شدن قسمت "وضعیت فاکتور" به انتهای فاکتور چاپی
+6 مهر 1394: حذف قابلیت "ثبت کالا هنگام ثبت فاکتور"
+1 آذر 1394: اضافه شدن کلیک راست به فرم نمایش فاکتورها و فرم انتخاب فاکتور معوقه
+17 اسفند 1394: بازگشت قابلیت ثبت نام مشتری درهنگام صدور فاکتور
+17 اسفند 1394: عدم تغییر خودکار زبان به فارسی
+17 خرداد 1395: افزوده شدن نوار وضعیت به پنجره لیست فاکتورها
+21 تیر 1395: اضافه شدن قابلیت ثبت ریز حساب و تغییرات در پنجره "مشخصات کالا"
+25 تیر 1395: اضافه شدن پنجره "درباره ما"
+9 مرداد 1395: اضافه شدن تنظیمات محیط برنامه و تنظیمات امنیتی
+9 مرداد 1395: اضافه شدن تاریخ و ساعت به صفحه اصلی
+11 مرداد 1395: اضافه شدن قابلیت ذخیره قیمت خرید در صفحه صدور فاکتور
+26 مهر 1395: اضافه شدن قابلیت چاپ به لیست تراکنش ها
+13 آبان 1396: اضافه شدن لیست چک ها
+1 فروردین 1397: بازگشت گزینه "تحویل" به فاکتور، انجام برخی رنگ بندی ها در لیست ها، اضافه شدن گزینه چاپ پیش فاکتور
+6 فروردین 1397: اضافه شدن گزینه یادآوری به صفحه Login
+6 فروردین 1397: مهاجرت از Visual Studio 2015 به Visual Studio 2017
+6 مرداد 1398: مهاجرت از Visual Studio 2017 به Visual Studio 2019
+6 مرداد 1398: مهاجرت از SQL Server 2014 به  SQL Server 2017
+</value>
+  </data>
+</root>

@@ -1,0 +1,697 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E21A3E2-E88B-478A-95F9-F25E2566CFA8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Avazeh</RootNamespace>
+    <AssemblyName>Avazeh</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Resources\MainIcon.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>65CF3D17278A10DBCBD10B7DD8E9F73B304696FD</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>AvazehStore_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="JntNum2Text, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\JntNum2Text.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="SplitButton">
+      <HintPath>..\SplitButton\bin\Debug\SplitButton.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLServerDetectionControl, Version=1.0.2866.12303, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\SQLServerDetectionControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.Services\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cEncrypt.cs" />
+    <Compile Include="Cheque\frmChequeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cheque\frmChequeDetail.Designer.cs">
+      <DependentUpon>frmChequeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cheque\frmChequeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cheque\frmChequeList.Designer.cs">
+      <DependentUpon>frmChequeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductDetails.Designer.cs">
+      <DependentUpon>frmProductDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintReports\crPrintCheque.cs">
+      <DependentUpon>crPrintCheque.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="PrintReports\crSF2.cs">
+      <DependentUpon>crSF2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PrintReports\crSF.cs">
+      <DependentUpon>crSF.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="PrintReports\crSF3-FastPrint.cs">
+      <DependentUpon>crSF3-FastPrint.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="PrintReports\crSF4-PishFaqctor.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSF4-PishFaqctor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintReports\crTD.cs">
+      <DependentUpon>crTD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="PrintReports\crSaleList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSaleList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sale\dsSaleList.cs">
+      <DependentUpon>dsSaleList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\dsSaleList.Designer.cs">
+      <DependentUpon>dsSaleList.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Sale\dsSellFactor.cs">
+      <DependentUpon>dsSellFactor.xsd</DependentUpon>
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="Sale\dsSellFactor.Designer.cs">
+      <DependentUpon>dsSellFactor.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Sale\FrmFactorDetail2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FrmFactorDetail2.Designer.cs">
+      <DependentUpon>FrmFactorDetail2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FrmFactorList2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FrmFactorList2.Designer.cs">
+      <DependentUpon>FrmFactorList2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\frmPrintSaleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\frmPrintSaleList.Designer.cs">
+      <DependentUpon>frmPrintSaleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAndSettings\MachineIDGenerator.cs" />
+    <Compile Include="SystemAndSettings\Frm_About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAndSettings\Frm_About.Designer.cs">
+      <DependentUpon>Frm_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAndSettings\Frm_AskForLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAndSettings\Frm_AskForLicense.Designer.cs">
+      <DependentUpon>Frm_AskForLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\dsTransactionDetails.cs">
+      <DependentUpon>dsTransactionDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\dsTransactionDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTransactionDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmTransactionDetail2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmTransactionDetail2.Designer.cs">
+      <DependentUpon>frmTransactionDetail2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmPrintTransactionDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmPrintTransactionDetails.Designer.cs">
+      <DependentUpon>frmPrintTransactionDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Frm_AddNewOrRenameTransactionFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\Frm_AddNewOrRenameTransactionFile.Designer.cs">
+      <DependentUpon>Frm_AddNewOrRenameTransactionFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\frmBrowsePrevFactors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\frmBrowsePrevFactors.Designer.cs">
+      <DependentUpon>frmBrowsePrevFactors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAndSettings\cUserFunction.cs" />
+    <Compile Include="SystemAndSettings\frmChangeLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAndSettings\frmChangeLog.Designer.cs">
+      <DependentUpon>frmChangeLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\frmFactorPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\frmFactorPayments.Designer.cs">
+      <DependentUpon>frmFactorPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\FrmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\FrmPrint.Designer.cs">
+      <DependentUpon>FrmPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cheque\frmPrintCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cheque\frmPrintCheque.Designer.cs">
+      <DependentUpon>frmPrintCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAndSettings\FrmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAndSettings\FrmUser.Designer.cs">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_customer.Designer.cs">
+      <DependentUpon>Frm_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAndSettings\Frm_Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAndSettings\Frm_Settings.Designer.cs">
+      <DependentUpon>Frm_Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAndSettings\Frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAndSettings\Frm_login.Designer.cs">
+      <DependentUpon>Frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_main.Designer.cs">
+      <DependentUpon>Frm_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_product.Designer.cs">
+      <DependentUpon>Frm_product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cheque\fromPrintChequePreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cheque\fromPrintChequePreview.Designer.cs">
+      <DependentUpon>fromPrintChequePreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transaction\Frm_Transactions2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\Frm_Transactions2.Designer.cs">
+      <DependentUpon>Frm_Transactions2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cheque\frmChequeDetail.resx">
+      <DependentUpon>frmChequeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cheque\frmChequeList.resx">
+      <DependentUpon>frmChequeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductDetails.resx">
+      <DependentUpon>frmProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\Avazeh.Cheque.frmChequeDetail.resources" />
+    <EmbeddedResource Include="obj\Debug\Avazeh.Cheque.frmChequeList.resources" />
+    <EmbeddedResource Include="obj\Debug\Avazeh.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\Avazeh.SystemAndSettings.frmAskForLicense.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.frmAbout.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.frmBrowsePrevFactors.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.frmChangeLog.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.FrmFactorDetail2.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.frmFactorList2.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.frmFactorPayments.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.FrmPrint.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.frmPrintCheque.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.frmPrintTransactionDetails.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.FrmUser.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.Frm_AddNewOrRenameTransactionFile.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.Frm_customer.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.Frm_login.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.Frm_main.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.Frm_product.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.Frm_Settings.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.Frm_TransactionDetails2.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.Frm_Transactions2.resources" />
+    <EmbeddedResource Include="obj\Debug\SafaShop.fromPrintChequePreview.resources" />
+    <EmbeddedResource Include="PrintReports\crPrintCheque.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crPrintCheque.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintReports\crSF2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSF2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintReports\crSF.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSF.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintReports\crSF3-FastPrint.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSF3-FastPrint.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintReports\crSF4-PishFaqctor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSF4-PishFaqctor.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintReports\crTD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crTD.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintReports\crSaleList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSaleList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FrmFactorDetail2.resx">
+      <DependentUpon>FrmFactorDetail2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FrmFactorList2.resx">
+      <DependentUpon>FrmFactorList2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\frmPrintSaleList.resx">
+      <DependentUpon>frmPrintSaleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAndSettings\Frm_About.resx">
+      <DependentUpon>Frm_About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\frmBrowsePrevFactors.resx">
+      <DependentUpon>frmBrowsePrevFactors.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAndSettings\frmChangeLog.resx">
+      <DependentUpon>frmChangeLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\frmFactorPayments.resx">
+      <DependentUpon>frmFactorPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\FrmPrint.resx">
+      <DependentUpon>FrmPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cheque\frmPrintCheque.resx">
+      <DependentUpon>frmPrintCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAndSettings\FrmUser.resx">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAndSettings\Frm_AskForLicense.resx">
+      <DependentUpon>Frm_AskForLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\frmPrintTransactionDetails.resx">
+      <DependentUpon>frmPrintTransactionDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\frmTransactionDetail2.resx">
+      <DependentUpon>frmTransactionDetail2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\Frm_AddNewOrRenameTransactionFile.resx">
+      <DependentUpon>Frm_AddNewOrRenameTransactionFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_customer.resx">
+      <DependentUpon>Frm_customer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAndSettings\Frm_Settings.resx">
+      <DependentUpon>Frm_Settings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAndSettings\Frm_login.resx">
+      <DependentUpon>Frm_login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_main.resx">
+      <DependentUpon>Frm_main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_product.resx">
+      <DependentUpon>Frm_product.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cheque\fromPrintChequePreview.resx">
+      <DependentUpon>fromPrintChequePreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Transaction\Frm_Transactions2.resx">
+      <DependentUpon>Frm_Transactions2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="AvazehStore_TemporaryKey.pfx" />
+    <None Include="bin\Debug\Avazeh.exe.config" />
+    <None Include="bin\Debug\Avazeh.vshost.exe.config" />
+    <None Include="bin\Debug\SafaShop.vshost.application" />
+    <None Include="bin\Debug\SafaShop.vshost.exe.config" />
+    <None Include="bin\Debug\SafaShop.vshost.exe.manifest" />
+    <None Include="bin\Debug\setting.ini" />
+    <None Include="bin\Debug\setting1.ini" />
+    <None Include="bin\Debug\tdata\D877F783D5D3EF8C1" />
+    <None Include="bin\Debug\tdata\D877F783D5D3EF8C\B23D4428C3BA44C80" />
+    <None Include="bin\Debug\tdata\D877F783D5D3EF8C\map1" />
+    <None Include="bin\Debug\tdata\settings0" />
+    <None Include="bin\Debug\tdata\shortcuts-custom.json" />
+    <None Include="bin\Debug\tdata\shortcuts-default.json" />
+    <None Include="bin\Debug\tdata\usertag" />
+    <None Include="obj\Debug\AvazehStore.csproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\AvazehStore.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Sale\dsSaleList.xsc">
+      <DependentUpon>dsSaleList.xsd</DependentUpon>
+    </None>
+    <None Include="Sale\dsSaleList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSaleList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Sale\dsSaleList.xss">
+      <DependentUpon>dsSaleList.xsd</DependentUpon>
+    </None>
+    <None Include="Sale\dsSellFactor.xsc">
+      <DependentUpon>dsSellFactor.xsd</DependentUpon>
+    </None>
+    <None Include="Sale\dsSellFactor.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSellFactor.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Sale\dsSellFactor.xss">
+      <DependentUpon>dsSellFactor.xsd</DependentUpon>
+    </None>
+    <None Include="Transaction\dsTransactionDetails.xsc">
+      <DependentUpon>dsTransactionDetails.xsd</DependentUpon>
+    </None>
+    <None Include="Transaction\dsTransactionDetails.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTransactionDetails.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Transaction\dsTransactionDetails.xss">
+      <DependentUpon>dsTransactionDetails.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New_Contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Archive_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text Document_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attachment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\ADODB.dll" />
+    <Content Include="bin\Debug\Avazeh.exe" />
+    <Content Include="bin\Debug\Avazeh.pdb" />
+    <Content Include="bin\Debug\Avazeh.vshost.exe" />
+    <Content Include="bin\Debug\CrystalDecisions.CrystalReports.Design.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.CrystalReports.Engine.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.Data.AdoDotNetInterop.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.ReportSource.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.Shared.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.Web.dll" />
+    <Content Include="bin\Debug\CrystalDecisions.Windows.Forms.dll" />
+    <Content Include="bin\Debug\FlashControlV71.dll" />
+    <Content Include="bin\Debug\JntNum2Text.dll" />
+    <Content Include="bin\Debug\log.txt" />
+    <Content Include="bin\Debug\log_start0.txt" />
+    <Content Include="bin\Debug\Microsoft.Build.Utilities.v3.5.dll" />
+    <Content Include="bin\Debug\Microsoft.Build.Utilities.v3.5.xml" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.WinForms.dll" />
+    <Content Include="bin\Debug\ShockwaveFlashObjects.dll" />
+    <Content Include="bin\Debug\SQLServerDetectionControl.dll" />
+    <Content Include="bin\Debug\stdole.dll" />
+    <Content Include="bin\Debug\System.Configuration.dll" />
+    <Content Include="bin\Debug\System.Data.DataSetExtensions.dll" />
+    <Content Include="bin\Debug\System.Data.dll" />
+    <Content Include="bin\Debug\System.Deployment.dll" />
+    <Content Include="bin\Debug\System.dll" />
+    <Content Include="bin\Debug\System.Drawing.dll" />
+    <Content Include="bin\Debug\System.Web.dll" />
+    <Content Include="bin\Debug\System.Web.Services.dll" />
+    <Content Include="bin\Debug\System.Windows.Forms.dll" />
+    <Content Include="bin\Debug\System.Xml.dll" />
+    <Content Include="bin\Debug\System.Xml.Linq.dll" />
+    <Content Include="JntNum2Text.dll" />
+    <Content Include="obj\Debug\Avazeh.exe" />
+    <Content Include="obj\Debug\Avazeh.pdb" />
+    <Content Include="obj\Debug\AvazehStore.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TempPE\PrintReports.crPrintCheque.cs.dll" />
+    <Content Include="obj\Debug\TempPE\PrintReports.crSF.cs.dll" />
+    <Content Include="obj\Debug\TempPE\PrintReports.crSF2.cs.dll" />
+    <Content Include="obj\Debug\TempPE\PrintReports.crSF3-FastPrint.cs.dll" />
+    <Content Include="obj\Debug\TempPE\PrintReports.crSF4-PishFaqctor.cs.dll" />
+    <Content Include="obj\Debug\TempPE\PrintReports.crTD.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Sale.dsSellFactor.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Transaction.dsTransactionDetails.Designer.cs.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\tdata\dumps\" />
+    <Folder Include="bin\Release\" />
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
