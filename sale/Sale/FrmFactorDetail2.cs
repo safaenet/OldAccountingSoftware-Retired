@@ -46,7 +46,7 @@ namespace SafaShop
             if (dt.Rows[0]["PaymentTotal"].ToString() == "")
                 return 0;
             else
-                return Double.Parse(dt.Rows[0]["PaymentTotal"].ToString());
+                return double.Parse(dt.Rows[0]["PaymentTotal"].ToString(), System.Globalization.CultureInfo.InvariantCulture);
         }
 
         public string maxCode(string field, string tbName)
@@ -59,7 +59,7 @@ namespace SafaShop
             {
                 da.Fill(dt);
                 uid = dt.Rows[0]["u_code"].ToString();
-                Int64 i = Int64.Parse(uid.Substring(1)) + 1;
+                Int64 i = Int64.Parse(uid.Substring(1), System.Globalization.CultureInfo.InvariantCulture) + 1;
                 uid = "C" + i.ToString();
             }
             catch
@@ -573,7 +573,7 @@ namespace SafaShop
             {
                 if (!blnCanDuplicateInLv && blnDuplicateIsFound)
                 {
-                    strRawCount = (float.Parse(strDuplicateCount) + 1).ToString();
+                    strRawCount = (double.Parse(strDuplicateCount, System.Globalization.CultureInfo.InvariantCulture) + 1).ToString();
                     this.strFloatCount = strRawCount;
                     UpdateTbSaleDetail(strProductCode, cmbProduct.Text, strFloatCount, strRawCount, strDuplicateBP, strDuplicateSP, strFactorNumber, strDuplicateRCode);
                 }
@@ -614,7 +614,7 @@ namespace SafaShop
             dr["strCount"] = StrRawCount;
             dr["buyprice"] = BP;
             dr["price"] = SP;
-            dr["total1"] = (Double.Parse(SP) * Double.Parse(StrFloatCount)).ToString();
+            dr["total1"] = (double.Parse(SP, System.Globalization.CultureInfo.InvariantCulture) * double.Parse(StrFloatCount, System.Globalization.CultureInfo.InvariantCulture)).ToString();
             dr["AddedDate"] = AD;
             dr["AddedTime"] = AT;
             ((DataTable)bindingSource1.DataSource).Rows.Add(dr);
@@ -633,7 +633,7 @@ namespace SafaShop
             dr[0]["strCount"] = StrRawCount;
             dr[0]["buyprice"] = BP;
             dr[0]["price"] = SP;
-            dr[0]["total1"] = Double.Parse(SP) * Double.Parse(StrFloatCount);
+            dr[0]["total1"] = double.Parse(SP, System.Globalization.CultureInfo.InvariantCulture) * double.Parse(StrFloatCount, System.Globalization.CultureInfo.InvariantCulture);
             dataAdapter.Update((DataTable)bindingSource1.DataSource);
         }
 
@@ -768,16 +768,16 @@ namespace SafaShop
             try
             {
                 string[] arrNum;
-                float a = 0;
+                double a = 0;
                 if (!txtRawCount.Text.Contains("+") && !txtRawCount.Text.Contains("*"))
-                    a = float.Parse(txtRawCount.Text.Trim());
+                    a = double.Parse(txtRawCount.Text.Trim(), System.Globalization.CultureInfo.InvariantCulture);
                 else if (txtRawCount.Text.Contains("+"))
                 {
                     arrNum = txtRawCount.Text.Split('+');
                     a = 0;
                     for (int i = 0; i < arrNum.Length; i++)
                     {
-                        a += float.Parse(arrNum[i]);
+                        a += double.Parse(arrNum[i], System.Globalization.CultureInfo.InvariantCulture);
                     }
                 }
                 else if (txtRawCount.Text.Contains("*"))
@@ -786,7 +786,7 @@ namespace SafaShop
                     a = 1;
                     for (int i = 0; i < arrNum.Length; i++)
                     {
-                        a *= float.Parse(arrNum[i]);
+                        a *= double.Parse(arrNum[i], System.Globalization.CultureInfo.InvariantCulture);
                     }
                 }
                 strFloatCount = a.ToString();
@@ -923,7 +923,7 @@ namespace SafaShop
             {
                 if (cmbSellPrice.Text.Trim().Length > 0)
                 {
-                    Int64 i = Int64.Parse(cmbSellPrice.Text.Trim()) * Int64.Parse(txtRawCount.Text.Trim());
+                    Int64 i = Int64.Parse(cmbSellPrice.Text.Trim(), System.Globalization.CultureInfo.InvariantCulture) * Int64.Parse(txtRawCount.Text.Trim(), System.Globalization.CultureInfo.InvariantCulture);
                     txtTotal.Text = i.ToString();
                 }
             }
@@ -1110,7 +1110,7 @@ namespace SafaShop
             {
                 cmbSellPrice.BackColor = SystemColors.Window;
                 DataGridView dgv = sender as DataGridView;
-                cmbProduct.SelectedValue = int.Parse(dgv.Rows[e.RowIndex].Cells["productCode"].Value.ToString());
+                cmbProduct.SelectedValue = int.Parse(dgv.Rows[e.RowIndex].Cells["productCode"].Value.ToString(), System.Globalization.CultureInfo.InvariantCulture);
                 cmbProduct.Tag = dgv.Rows[e.RowIndex].Cells["productCode"].Value.ToString();
                 if (chkShowNetProfit.Checked)
                     txtBuyPrice.Text = dgv.Rows[e.RowIndex].Cells["buyprice"].Value.ToString().Replace(",", "");
@@ -1167,7 +1167,7 @@ namespace SafaShop
 
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
             {
-                float fltCount = 0;
+                double fltCount = 0;
                 DataRow[] dr = null; ;
                 bool blnCanUpdate = false;
                 if (senderGrid.Columns[e.ColumnIndex].Name == "dgvbtnColumnPlus" || senderGrid.Columns[e.ColumnIndex].Name == "dgvbtnColumnMinus")
@@ -1175,7 +1175,7 @@ namespace SafaShop
                     dr = (bindingSource1.DataSource as DataTable).Select("code = " + dgvFactorDetail.Rows[e.RowIndex].Cells["code"].Value.ToString());
                     if (dr.Length == 0)
                         return;
-                    if (!float.TryParse(dr[0]["count"].ToString(), out fltCount))
+                    if (!double.TryParse(dr[0]["count"].ToString(), System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out fltCount))
                         return;
                     if (senderGrid.Columns[e.ColumnIndex].Name == "dgvbtnColumnPlus")
                     {
@@ -1190,7 +1190,7 @@ namespace SafaShop
                     if (blnCanUpdate)
                     {
                         dr[0]["count"] = dr[0]["strCount"] = fltCount;
-                        dr[0]["total1"] = (Double.Parse(dr[0]["Count"].ToString()) * Double.Parse(dr[0]["price"].ToString())).ToString();
+                        dr[0]["total1"] = (double.Parse(dr[0]["Count"].ToString(), System.Globalization.CultureInfo.InvariantCulture) * double.Parse(dr[0]["price"].ToString(), System.Globalization.CultureInfo.InvariantCulture)).ToString();
                         dataAdapter.Update((DataTable)bindingSource1.DataSource);
                         initialTextbox2();
                     }
@@ -1214,7 +1214,7 @@ namespace SafaShop
             Int64 intSum = 0;
             Int64 intTotalSum = 0;
             foreach (DataGridViewRow r in dgvFactorDetail.SelectedRows)
-                if (Int64.TryParse(r.Cells["total1"].Value.ToString(), out intSum))
+                if (Int64.TryParse(r.Cells["total1"].Value.ToString(), System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out intSum))
                     intTotalSum += intSum;
             tsslTotalSumOfSelectedRows.Text = cUF.split_space(intTotalSum.ToString(), ",");
         }

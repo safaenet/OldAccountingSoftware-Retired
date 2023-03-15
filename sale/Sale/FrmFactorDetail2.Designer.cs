@@ -1162,13 +1162,13 @@
             // tsslTotalSumOfSelectedRows
             // 
             this.tsslTotalSumOfSelectedRows.Name = "tsslTotalSumOfSelectedRows";
-            this.tsslTotalSumOfSelectedRows.Size = new System.Drawing.Size(15, 17);
+            this.tsslTotalSumOfSelectedRows.Size = new System.Drawing.Size(14, 17);
             this.tsslTotalSumOfSelectedRows.Text = "0";
             // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(182, 17);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(181, 17);
             this.toolStripStatusLabel2.Text = ": جمع قیمت کل انتخاب شده ها";
             // 
             // cmsPrintMode
