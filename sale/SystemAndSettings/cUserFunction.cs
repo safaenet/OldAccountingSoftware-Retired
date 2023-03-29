@@ -72,7 +72,7 @@ namespace SafaShop
                 {
                     if (lang.Culture.TwoLetterISOLanguageName == cl)
                     {
-                        Application.CurrentCulture = lang.Culture;
+                        //Application.CurrentCulture = lang.Culture;
                         Application.CurrentInputLanguage = lang;
                     }
                 }
