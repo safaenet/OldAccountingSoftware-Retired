@@ -86,7 +86,7 @@
             this.txtProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtProduct.Location = new System.Drawing.Point(0, 16);
             this.txtProduct.Name = "txtProduct";
-            this.txtProduct.Size = new System.Drawing.Size(289, 20);
+            this.txtProduct.Size = new System.Drawing.Size(289, 24);
             this.txtProduct.TabIndex = 2;
             this.txtProduct.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProduct_KeyPress);
             // 
@@ -107,7 +107,7 @@
             this.txtCode.Location = new System.Drawing.Point(0, 16);
             this.txtCode.Name = "txtCode";
             this.txtCode.ReadOnly = true;
-            this.txtCode.Size = new System.Drawing.Size(77, 20);
+            this.txtCode.Size = new System.Drawing.Size(77, 24);
             this.txtCode.TabIndex = 7;
             this.txtCode.TabStop = false;
             this.txtCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProduct_KeyPress);
@@ -118,7 +118,7 @@
             this.txtDetail.Location = new System.Drawing.Point(0, 16);
             this.txtDetail.Name = "txtDetail";
             this.txtDetail.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtDetail.Size = new System.Drawing.Size(202, 20);
+            this.txtDetail.Size = new System.Drawing.Size(202, 24);
             this.txtDetail.TabIndex = 6;
             this.txtDetail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProduct_KeyPress);
             // 
@@ -127,7 +127,7 @@
             this.txtSellPrice.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSellPrice.Location = new System.Drawing.Point(0, 16);
             this.txtSellPrice.Name = "txtSellPrice";
-            this.txtSellPrice.Size = new System.Drawing.Size(100, 20);
+            this.txtSellPrice.Size = new System.Drawing.Size(100, 24);
             this.txtSellPrice.TabIndex = 5;
             this.txtSellPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProduct_KeyPress);
             // 
@@ -136,7 +136,7 @@
             this.txtBuyPrice.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtBuyPrice.Location = new System.Drawing.Point(0, 16);
             this.txtBuyPrice.Name = "txtBuyPrice";
-            this.txtBuyPrice.Size = new System.Drawing.Size(100, 20);
+            this.txtBuyPrice.Size = new System.Drawing.Size(100, 24);
             this.txtBuyPrice.TabIndex = 4;
             this.txtBuyPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProduct_KeyPress);
             // 
@@ -259,7 +259,7 @@
             this.txtSearchBy.Location = new System.Drawing.Point(0, 16);
             this.txtSearchBy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSearchBy.Name = "txtSearchBy";
-            this.txtSearchBy.Size = new System.Drawing.Size(538, 20);
+            this.txtSearchBy.Size = new System.Drawing.Size(538, 24);
             this.txtSearchBy.TabIndex = 0;
             this.txtSearchBy.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtSearchBy.TextChanged += new System.EventHandler(this.txtSearchBy_TextChanged);
@@ -293,7 +293,7 @@
             this.cmbSearchBy.Location = new System.Drawing.Point(0, 16);
             this.cmbSearchBy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbSearchBy.Name = "cmbSearchBy";
-            this.cmbSearchBy.Size = new System.Drawing.Size(125, 21);
+            this.cmbSearchBy.Size = new System.Drawing.Size(125, 24);
             this.cmbSearchBy.TabIndex = 1;
             this.cmbSearchBy.SelectedIndexChanged += new System.EventHandler(this.cmbSearchBy_SelectedIndexChanged);
             // 
@@ -323,11 +323,11 @@
             // 
             this.chkShowExtraInfo.AutoSize = true;
             this.chkShowExtraInfo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.chkShowExtraInfo.Location = new System.Drawing.Point(0, 34);
+            this.chkShowExtraInfo.Location = new System.Drawing.Point(0, 42);
             this.chkShowExtraInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkShowExtraInfo.Name = "chkShowExtraInfo";
             this.chkShowExtraInfo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.chkShowExtraInfo.Size = new System.Drawing.Size(128, 17);
+            this.chkShowExtraInfo.Size = new System.Drawing.Size(128, 21);
             this.chkShowExtraInfo.TabIndex = 18;
             this.chkShowExtraInfo.Text = "نمایش اطلاعات آماری";
             this.chkShowExtraInfo.UseVisualStyleBackColor = true;
@@ -337,11 +337,11 @@
             // 
             this.chkToggleBuyPrice.AutoSize = true;
             this.chkToggleBuyPrice.Dock = System.Windows.Forms.DockStyle.Top;
-            this.chkToggleBuyPrice.Location = new System.Drawing.Point(0, 17);
+            this.chkToggleBuyPrice.Location = new System.Drawing.Point(0, 21);
             this.chkToggleBuyPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkToggleBuyPrice.Name = "chkToggleBuyPrice";
             this.chkToggleBuyPrice.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.chkToggleBuyPrice.Size = new System.Drawing.Size(128, 17);
+            this.chkToggleBuyPrice.Size = new System.Drawing.Size(128, 21);
             this.chkToggleBuyPrice.TabIndex = 10;
             this.chkToggleBuyPrice.Text = "نمایش قیمت خرید";
             this.chkToggleBuyPrice.UseVisualStyleBackColor = true;
@@ -357,7 +357,7 @@
             this.chkToggleSellPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkToggleSellPrice.Name = "chkToggleSellPrice";
             this.chkToggleSellPrice.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.chkToggleSellPrice.Size = new System.Drawing.Size(128, 17);
+            this.chkToggleSellPrice.Size = new System.Drawing.Size(128, 21);
             this.chkToggleSellPrice.TabIndex = 9;
             this.chkToggleSellPrice.Text = "نمایش قیمت فروش";
             this.chkToggleSellPrice.UseVisualStyleBackColor = true;
@@ -381,7 +381,7 @@
             this.txtBarCode.Location = new System.Drawing.Point(0, 16);
             this.txtBarCode.MaxLength = 15;
             this.txtBarCode.Name = "txtBarCode";
-            this.txtBarCode.Size = new System.Drawing.Size(120, 20);
+            this.txtBarCode.Size = new System.Drawing.Size(120, 24);
             this.txtBarCode.TabIndex = 3;
             this.txtBarCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBarCode_KeyPress);
             // 
@@ -476,7 +476,7 @@
             this.txtCount.MaxLength = 15;
             this.txtCount.Name = "txtCount";
             this.txtCount.ReadOnly = true;
-            this.txtCount.Size = new System.Drawing.Size(97, 20);
+            this.txtCount.Size = new System.Drawing.Size(97, 24);
             this.txtCount.TabIndex = 3;
             // 
             // btnCountAndPrices
@@ -523,7 +523,7 @@
             // 
             // Frm_product
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1016, 447);
             this.Controls.Add(this.lvProduct);

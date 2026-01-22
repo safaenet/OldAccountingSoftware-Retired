@@ -31,6 +31,7 @@ namespace SafaShop
         bool blnCanDuplicateInLv = false;
         bool blnCanEditFactor = true;
         bool blnShowPlusMinusButtonInsideGrid = false;
+        bool blnFireCmbProductIndexChangedEvent = true;
         public FrmFactorDetail2()
         {
             InitializeComponent();
@@ -451,7 +452,9 @@ namespace SafaShop
             strFloatCount = "";
             cmbSellPrice.BackColor = SystemColors.Window;
             cmbProduct.Tag = null;
+            blnFireCmbProductIndexChangedEvent = false;
             cmbProduct.SelectedIndex = -1;
+            blnFireCmbProductIndexChangedEvent = true;
             chkTahvil.Checked = false;
         }
 
@@ -487,6 +490,7 @@ namespace SafaShop
                 btnSave.Select();
                 return;
             }
+            //if (cmbProduct.Text.Length == 0) return;
             txtCount_Leave(sender, e);
             #region AutoAddNewProduct
             if (cmbProduct.SelectedValue == null || cmbProduct.SelectedValue.ToString().Trim() == "System.Data.DataRowView")
@@ -610,11 +614,11 @@ namespace SafaShop
             dr["factorNum"] = FN;
             dr["productCode"] = PC;
             dr["product"] = PN;
-            dr["Count"] = StrFloatCount;
+            dr["Count"] = string.IsNullOrEmpty(StrFloatCount) ? "0" : strFloatCount;
             dr["strCount"] = StrRawCount;
             dr["buyprice"] = BP;
             dr["price"] = SP;
-            dr["total1"] = (double.Parse(SP, System.Globalization.CultureInfo.InvariantCulture) * double.Parse(StrFloatCount, System.Globalization.CultureInfo.InvariantCulture)).ToString();
+            dr["total1"] = (double.Parse(SP, System.Globalization.CultureInfo.InvariantCulture) * double.Parse(string.IsNullOrEmpty(StrFloatCount)?"0": StrFloatCount, System.Globalization.CultureInfo.InvariantCulture)).ToString();
             dr["AddedDate"] = AD;
             dr["AddedTime"] = AT;
             ((DataTable)bindingSource1.DataSource).Rows.Add(dr);
@@ -874,6 +878,7 @@ namespace SafaShop
 
         private void cmbProduct_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (blnFireCmbProductIndexChangedEvent == false) return;
             try
             {
                 // cmbProduct.Tag = cmbProduct.SelectedValue.ToString();

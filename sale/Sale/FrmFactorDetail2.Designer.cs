@@ -162,9 +162,9 @@
             // 
             this.btnAdd.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnAdd.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnAdd.Location = new System.Drawing.Point(3, 18);
+            this.btnAdd.Location = new System.Drawing.Point(3, 22);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(61, 39);
+            this.btnAdd.Size = new System.Drawing.Size(61, 35);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -173,16 +173,17 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmDelete});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(100, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(108, 26);
             // 
             // tsmDelete
             // 
             this.tsmDelete.Font = new System.Drawing.Font("Tahoma", 8.5F);
             this.tsmDelete.Name = "tsmDelete";
-            this.tsmDelete.Size = new System.Drawing.Size(99, 22);
+            this.tsmDelete.Size = new System.Drawing.Size(107, 22);
             this.tsmDelete.Text = "حذف";
             this.tsmDelete.Click += new System.EventHandler(this.tsmDelete_Click);
             // 
@@ -194,7 +195,7 @@
             this.txtFactorNum.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFactorNum.Name = "txtFactorNum";
             this.txtFactorNum.ReadOnly = true;
-            this.txtFactorNum.Size = new System.Drawing.Size(121, 20);
+            this.txtFactorNum.Size = new System.Drawing.Size(121, 24);
             this.txtFactorNum.TabIndex = 16;
             this.txtFactorNum.TabStop = false;
             this.txtFactorNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -214,10 +215,10 @@
             // 
             this.txtDate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtDate.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txtDate.Location = new System.Drawing.Point(0, 17);
+            this.txtDate.Location = new System.Drawing.Point(0, 21);
             this.txtDate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(101, 20);
+            this.txtDate.Size = new System.Drawing.Size(101, 24);
             this.txtDate.TabIndex = 2;
             this.txtDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtDate.Enter += new System.EventHandler(this.txtDate_Enter);
@@ -229,7 +230,7 @@
             this.txtRawCount.Location = new System.Drawing.Point(0, 16);
             this.txtRawCount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtRawCount.Name = "txtRawCount";
-            this.txtRawCount.Size = new System.Drawing.Size(71, 20);
+            this.txtRawCount.Size = new System.Drawing.Size(71, 24);
             this.txtRawCount.TabIndex = 1;
             this.txtRawCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtRawCount.Enter += new System.EventHandler(this.txtCount_Enter);
@@ -243,7 +244,7 @@
             this.txtTime.Location = new System.Drawing.Point(0, 18);
             this.txtTime.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(95, 20);
+            this.txtTime.Size = new System.Drawing.Size(95, 24);
             this.txtTime.TabIndex = 3;
             this.txtTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtTime.Enter += new System.EventHandler(this.txtTime_Enter);
@@ -364,7 +365,7 @@
             this.txtTotal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
-            this.txtTotal.Size = new System.Drawing.Size(115, 20);
+            this.txtTotal.Size = new System.Drawing.Size(115, 24);
             this.txtTotal.TabIndex = 80;
             this.txtTotal.TabStop = false;
             this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -389,7 +390,7 @@
             this.cmbProduct.Location = new System.Drawing.Point(0, 16);
             this.cmbProduct.Name = "cmbProduct";
             this.cmbProduct.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cmbProduct.Size = new System.Drawing.Size(278, 21);
+            this.cmbProduct.Size = new System.Drawing.Size(278, 24);
             this.cmbProduct.TabIndex = 0;
             this.cmbProduct.SelectedIndexChanged += new System.EventHandler(this.cmbProduct_SelectedIndexChanged);
             // 
@@ -411,7 +412,7 @@
             this.txtBuyPrice.Location = new System.Drawing.Point(0, 16);
             this.txtBuyPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBuyPrice.Name = "txtBuyPrice";
-            this.txtBuyPrice.Size = new System.Drawing.Size(95, 20);
+            this.txtBuyPrice.Size = new System.Drawing.Size(95, 24);
             this.txtBuyPrice.TabIndex = 2;
             this.txtBuyPrice.TabStop = false;
             this.txtBuyPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -424,7 +425,7 @@
             this.chkAddToFirst.Dock = System.Windows.Forms.DockStyle.Top;
             this.chkAddToFirst.Location = new System.Drawing.Point(0, 16);
             this.chkAddToFirst.Name = "chkAddToFirst";
-            this.chkAddToFirst.Size = new System.Drawing.Size(68, 14);
+            this.chkAddToFirst.Size = new System.Drawing.Size(68, 17);
             this.chkAddToFirst.TabIndex = 5;
             this.chkAddToFirst.TabStop = false;
             this.chkAddToFirst.UseVisualStyleBackColor = false;
@@ -437,7 +438,7 @@
             this.cmbSellPrice.FormattingEnabled = true;
             this.cmbSellPrice.Location = new System.Drawing.Point(0, 16);
             this.cmbSellPrice.Name = "cmbSellPrice";
-            this.cmbSellPrice.Size = new System.Drawing.Size(95, 21);
+            this.cmbSellPrice.Size = new System.Drawing.Size(95, 24);
             this.cmbSellPrice.TabIndex = 3;
             this.cmbSellPrice.Enter += new System.EventHandler(this.cmbSellPrice_Enter_1);
             this.cmbSellPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
@@ -452,7 +453,7 @@
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(202, 484);
+            this.panel1.Location = new System.Drawing.Point(202, 479);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(963, 49);
             this.panel1.TabIndex = 96;
@@ -502,7 +503,7 @@
             this.cmbCustomer.Location = new System.Drawing.Point(0, 0);
             this.cmbCustomer.Name = "cmbCustomer";
             this.cmbCustomer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cmbCustomer.Size = new System.Drawing.Size(151, 21);
+            this.cmbCustomer.Size = new System.Drawing.Size(151, 24);
             this.cmbCustomer.TabIndex = 2;
             this.cmbCustomer.SelectedIndexChanged += new System.EventHandler(this.cmbCustomer_SelectedIndexChanged);
             this.cmbCustomer.Leave += new System.EventHandler(this.cmbCustomer_Leave);
@@ -526,7 +527,7 @@
             this.txtGrandTotal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtGrandTotal.Name = "txtGrandTotal";
             this.txtGrandTotal.ReadOnly = true;
-            this.txtGrandTotal.Size = new System.Drawing.Size(130, 20);
+            this.txtGrandTotal.Size = new System.Drawing.Size(130, 24);
             this.txtGrandTotal.TabIndex = 96;
             this.txtGrandTotal.TabStop = false;
             this.txtGrandTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -539,7 +540,7 @@
             this.txtTotalPayment.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTotalPayment.Name = "txtTotalPayment";
             this.txtTotalPayment.ReadOnly = true;
-            this.txtTotalPayment.Size = new System.Drawing.Size(113, 20);
+            this.txtTotalPayment.Size = new System.Drawing.Size(113, 24);
             this.txtTotalPayment.TabIndex = 98;
             this.txtTotalPayment.Text = "0";
             this.txtTotalPayment.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -563,7 +564,7 @@
             this.txtLastFactorNum.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLastFactorNum.Name = "txtLastFactorNum";
             this.txtLastFactorNum.ReadOnly = true;
-            this.txtLastFactorNum.Size = new System.Drawing.Size(121, 20);
+            this.txtLastFactorNum.Size = new System.Drawing.Size(121, 24);
             this.txtLastFactorNum.TabIndex = 100;
             this.txtLastFactorNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -602,7 +603,7 @@
             this.txtTotalRemained.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTotalRemained.Name = "txtTotalRemained";
             this.txtTotalRemained.ReadOnly = true;
-            this.txtTotalRemained.Size = new System.Drawing.Size(120, 20);
+            this.txtTotalRemained.Size = new System.Drawing.Size(120, 24);
             this.txtTotalRemained.TabIndex = 103;
             this.txtTotalRemained.Text = "0";
             this.txtTotalRemained.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -636,9 +637,9 @@
             this.panel17.Controls.Add(this.txtDescription);
             this.panel17.Controls.Add(this.label18);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel17.Location = new System.Drawing.Point(3, 369);
+            this.panel17.Location = new System.Drawing.Point(3, 373);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(196, 183);
+            this.panel17.Size = new System.Drawing.Size(196, 179);
             this.panel17.TabIndex = 123;
             // 
             // txtDescription
@@ -649,7 +650,7 @@
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtDescription.Size = new System.Drawing.Size(196, 167);
+            this.txtDescription.Size = new System.Drawing.Size(196, 163);
             this.txtDescription.TabIndex = 97;
             // 
             // label18
@@ -676,7 +677,7 @@
             this.panel2.Controls.Add(this.panel15);
             this.panel2.Controls.Add(this.panel9);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(3, 18);
+            this.panel2.Location = new System.Drawing.Point(3, 22);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(196, 351);
             this.panel2.TabIndex = 97;
@@ -700,7 +701,7 @@
             this.txtNetProfit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNetProfit.Name = "txtNetProfit";
             this.txtNetProfit.ReadOnly = true;
-            this.txtNetProfit.Size = new System.Drawing.Size(113, 20);
+            this.txtNetProfit.Size = new System.Drawing.Size(113, 24);
             this.txtNetProfit.TabIndex = 111;
             this.txtNetProfit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -754,7 +755,7 @@
             this.txtGTPlusLastRemained.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtGTPlusLastRemained.Name = "txtGTPlusLastRemained";
             this.txtGTPlusLastRemained.ReadOnly = true;
-            this.txtGTPlusLastRemained.Size = new System.Drawing.Size(141, 20);
+            this.txtGTPlusLastRemained.Size = new System.Drawing.Size(141, 24);
             this.txtGTPlusLastRemained.TabIndex = 106;
             this.txtGTPlusLastRemained.Text = "0";
             this.txtGTPlusLastRemained.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -799,7 +800,7 @@
             this.txtLastFactorBalance.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLastFactorBalance.Name = "txtLastFactorBalance";
             this.txtLastFactorBalance.ReadOnly = true;
-            this.txtLastFactorBalance.Size = new System.Drawing.Size(164, 20);
+            this.txtLastFactorBalance.Size = new System.Drawing.Size(164, 24);
             this.txtLastFactorBalance.TabIndex = 102;
             this.txtLastFactorBalance.Text = "0";
             this.txtLastFactorBalance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -876,7 +877,7 @@
             this.chkPrintDate.Location = new System.Drawing.Point(0, 0);
             this.chkPrintDate.Name = "chkPrintDate";
             this.chkPrintDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.chkPrintDate.Size = new System.Drawing.Size(101, 17);
+            this.chkPrintDate.Size = new System.Drawing.Size(101, 21);
             this.chkPrintDate.TabIndex = 108;
             this.chkPrintDate.Text = "تاریخ";
             this.chkPrintDate.UseVisualStyleBackColor = true;
@@ -908,7 +909,7 @@
             this.txtTelNum.Location = new System.Drawing.Point(0, 0);
             this.txtTelNum.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTelNum.Name = "txtTelNum";
-            this.txtTelNum.Size = new System.Drawing.Size(130, 20);
+            this.txtTelNum.Size = new System.Drawing.Size(130, 24);
             this.txtTelNum.TabIndex = 1;
             this.txtTelNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -959,9 +960,9 @@
             this.pnlCount.Controls.Add(this.txtRawCount);
             this.pnlCount.Controls.Add(this.label4);
             this.pnlCount.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlCount.Location = new System.Drawing.Point(496, 18);
+            this.pnlCount.Location = new System.Drawing.Point(496, 22);
             this.pnlCount.Name = "pnlCount";
-            this.pnlCount.Size = new System.Drawing.Size(71, 39);
+            this.pnlCount.Size = new System.Drawing.Size(71, 35);
             this.pnlCount.TabIndex = 104;
             // 
             // pnlBuyPrice
@@ -969,9 +970,9 @@
             this.pnlBuyPrice.Controls.Add(this.txtBuyPrice);
             this.pnlBuyPrice.Controls.Add(this.lblBuyPrice);
             this.pnlBuyPrice.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlBuyPrice.Location = new System.Drawing.Point(401, 18);
+            this.pnlBuyPrice.Location = new System.Drawing.Point(401, 22);
             this.pnlBuyPrice.Name = "pnlBuyPrice";
-            this.pnlBuyPrice.Size = new System.Drawing.Size(95, 39);
+            this.pnlBuyPrice.Size = new System.Drawing.Size(95, 35);
             this.pnlBuyPrice.TabIndex = 104;
             // 
             // pnlSellPrice
@@ -979,9 +980,9 @@
             this.pnlSellPrice.Controls.Add(this.cmbSellPrice);
             this.pnlSellPrice.Controls.Add(this.label3);
             this.pnlSellPrice.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlSellPrice.Location = new System.Drawing.Point(306, 18);
+            this.pnlSellPrice.Location = new System.Drawing.Point(306, 22);
             this.pnlSellPrice.Name = "pnlSellPrice";
-            this.pnlSellPrice.Size = new System.Drawing.Size(95, 39);
+            this.pnlSellPrice.Size = new System.Drawing.Size(95, 35);
             this.pnlSellPrice.TabIndex = 104;
             // 
             // pnlTotal
@@ -989,9 +990,9 @@
             this.pnlTotal.Controls.Add(this.txtTotal);
             this.pnlTotal.Controls.Add(this.label8);
             this.pnlTotal.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlTotal.Location = new System.Drawing.Point(191, 18);
+            this.pnlTotal.Location = new System.Drawing.Point(191, 22);
             this.pnlTotal.Name = "pnlTotal";
-            this.pnlTotal.Size = new System.Drawing.Size(115, 39);
+            this.pnlTotal.Size = new System.Drawing.Size(115, 35);
             this.pnlTotal.TabIndex = 104;
             // 
             // pnlBarCode
@@ -999,9 +1000,9 @@
             this.pnlBarCode.Controls.Add(this.txtBarCode);
             this.pnlBarCode.Controls.Add(this.label9);
             this.pnlBarCode.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlBarCode.Location = new System.Drawing.Point(567, 18);
+            this.pnlBarCode.Location = new System.Drawing.Point(567, 22);
             this.pnlBarCode.Name = "pnlBarCode";
-            this.pnlBarCode.Size = new System.Drawing.Size(115, 39);
+            this.pnlBarCode.Size = new System.Drawing.Size(115, 35);
             this.pnlBarCode.TabIndex = 104;
             // 
             // txtBarCode
@@ -1011,7 +1012,7 @@
             this.txtBarCode.Location = new System.Drawing.Point(0, 16);
             this.txtBarCode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBarCode.Name = "txtBarCode";
-            this.txtBarCode.Size = new System.Drawing.Size(115, 20);
+            this.txtBarCode.Size = new System.Drawing.Size(115, 24);
             this.txtBarCode.TabIndex = 9;
             this.txtBarCode.TabStop = false;
             this.txtBarCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1034,9 +1035,9 @@
             this.pnlProduct.Controls.Add(this.cmbProduct);
             this.pnlProduct.Controls.Add(this.label1);
             this.pnlProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlProduct.Location = new System.Drawing.Point(682, 18);
+            this.pnlProduct.Location = new System.Drawing.Point(682, 22);
             this.pnlProduct.Name = "pnlProduct";
-            this.pnlProduct.Size = new System.Drawing.Size(278, 39);
+            this.pnlProduct.Size = new System.Drawing.Size(278, 35);
             this.pnlProduct.TabIndex = 104;
             // 
             // gbProductSection
@@ -1065,9 +1066,9 @@
             this.pnlTahvil.Controls.Add(this.chkTahvil);
             this.pnlTahvil.Controls.Add(this.label5);
             this.pnlTahvil.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlTahvil.Location = new System.Drawing.Point(132, 18);
+            this.pnlTahvil.Location = new System.Drawing.Point(132, 22);
             this.pnlTahvil.Name = "pnlTahvil";
-            this.pnlTahvil.Size = new System.Drawing.Size(59, 39);
+            this.pnlTahvil.Size = new System.Drawing.Size(59, 35);
             this.pnlTahvil.TabIndex = 124;
             // 
             // chkTahvil
@@ -1078,7 +1079,7 @@
             this.chkTahvil.Font = new System.Drawing.Font("Tahoma", 8F);
             this.chkTahvil.Location = new System.Drawing.Point(0, 16);
             this.chkTahvil.Name = "chkTahvil";
-            this.chkTahvil.Size = new System.Drawing.Size(59, 14);
+            this.chkTahvil.Size = new System.Drawing.Size(59, 17);
             this.chkTahvil.TabIndex = 123;
             this.chkTahvil.UseVisualStyleBackColor = true;
             // 
@@ -1098,9 +1099,9 @@
             this.panel19.Controls.Add(this.chkAddToFirst);
             this.panel19.Controls.Add(this.label11);
             this.panel19.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel19.Location = new System.Drawing.Point(64, 18);
+            this.panel19.Location = new System.Drawing.Point(64, 22);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(68, 39);
+            this.panel19.Size = new System.Drawing.Size(68, 35);
             this.panel19.TabIndex = 125;
             // 
             // dgvFactorDetail
@@ -1138,7 +1139,7 @@
             this.dgvFactorDetail.RowHeadersWidth = 70;
             this.dgvFactorDetail.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvFactorDetail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvFactorDetail.Size = new System.Drawing.Size(963, 424);
+            this.dgvFactorDetail.Size = new System.Drawing.Size(963, 419);
             this.dgvFactorDetail.TabIndex = 122;
             this.dgvFactorDetail.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFactorDetail_CellContentClick);
             this.dgvFactorDetail.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvFactorDetail_CellDoubleClick);
@@ -1150,29 +1151,31 @@
             // statusStrip1
             // 
             this.statusStrip1.Font = new System.Drawing.Font("Tahoma", 9.75F);
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsslTotalSumOfSelectedRows,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(202, 533);
+            this.statusStrip1.Location = new System.Drawing.Point(202, 528);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(963, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(963, 27);
             this.statusStrip1.TabIndex = 123;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // tsslTotalSumOfSelectedRows
             // 
             this.tsslTotalSumOfSelectedRows.Name = "tsslTotalSumOfSelectedRows";
-            this.tsslTotalSumOfSelectedRows.Size = new System.Drawing.Size(14, 17);
+            this.tsslTotalSumOfSelectedRows.Size = new System.Drawing.Size(19, 21);
             this.tsslTotalSumOfSelectedRows.Text = "0";
             // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(181, 17);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(232, 21);
             this.toolStripStatusLabel2.Text = ": جمع قیمت کل انتخاب شده ها";
             // 
             // cmsPrintMode
             // 
+            this.cmsPrintMode.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsPrintMode.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiPrintSaleWithoutHeader,
             this.toolStripSeparator2,
@@ -1182,56 +1185,56 @@
             this.tsmiPrintInvoiceWithoutOfficialHeader,
             this.tsmiPrintInvoiceWithOfficialHeader});
             this.cmsPrintMode.Name = "cmsPrintMode";
-            this.cmsPrintMode.Size = new System.Drawing.Size(235, 126);
+            this.cmsPrintMode.Size = new System.Drawing.Size(285, 136);
             // 
             // tsmiPrintSaleWithoutHeader
             // 
             this.tsmiPrintSaleWithoutHeader.Name = "tsmiPrintSaleWithoutHeader";
-            this.tsmiPrintSaleWithoutHeader.Size = new System.Drawing.Size(234, 22);
+            this.tsmiPrintSaleWithoutHeader.Size = new System.Drawing.Size(284, 24);
             this.tsmiPrintSaleWithoutHeader.Text = "فاکتور فروش بدون سربرگ";
             this.tsmiPrintSaleWithoutHeader.Click += new System.EventHandler(this.TsmiPrintSaleWithoutHeader_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(231, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(281, 6);
             // 
             // tsmiPrintSaleWithoutOfficialHeader
             // 
             this.tsmiPrintSaleWithoutOfficialHeader.Name = "tsmiPrintSaleWithoutOfficialHeader";
-            this.tsmiPrintSaleWithoutOfficialHeader.Size = new System.Drawing.Size(234, 22);
+            this.tsmiPrintSaleWithoutOfficialHeader.Size = new System.Drawing.Size(284, 24);
             this.tsmiPrintSaleWithoutOfficialHeader.Text = "فاکتور فروش بدون سربرگ رسمی";
             this.tsmiPrintSaleWithoutOfficialHeader.Click += new System.EventHandler(this.TsmiPrintSaleWithoutOfficialHeader_Click);
             // 
             // tsmiPrintSaleWithOfficialHeader
             // 
             this.tsmiPrintSaleWithOfficialHeader.Name = "tsmiPrintSaleWithOfficialHeader";
-            this.tsmiPrintSaleWithOfficialHeader.Size = new System.Drawing.Size(234, 22);
+            this.tsmiPrintSaleWithOfficialHeader.Size = new System.Drawing.Size(284, 24);
             this.tsmiPrintSaleWithOfficialHeader.Text = "فاکتور فروش با سربرگ رسمی";
             this.tsmiPrintSaleWithOfficialHeader.Click += new System.EventHandler(this.TsmiPrintSaleWithOfficialHeader_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(231, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(281, 6);
             // 
             // tsmiPrintInvoiceWithoutOfficialHeader
             // 
             this.tsmiPrintInvoiceWithoutOfficialHeader.Name = "tsmiPrintInvoiceWithoutOfficialHeader";
-            this.tsmiPrintInvoiceWithoutOfficialHeader.Size = new System.Drawing.Size(234, 22);
+            this.tsmiPrintInvoiceWithoutOfficialHeader.Size = new System.Drawing.Size(284, 24);
             this.tsmiPrintInvoiceWithoutOfficialHeader.Text = "پیش فاکتور بدون سربرگ رسمی";
             this.tsmiPrintInvoiceWithoutOfficialHeader.Click += new System.EventHandler(this.TsmiPrintInvoiceWithoutOfficialHeader_Click);
             // 
             // tsmiPrintInvoiceWithOfficialHeader
             // 
             this.tsmiPrintInvoiceWithOfficialHeader.Name = "tsmiPrintInvoiceWithOfficialHeader";
-            this.tsmiPrintInvoiceWithOfficialHeader.Size = new System.Drawing.Size(234, 22);
+            this.tsmiPrintInvoiceWithOfficialHeader.Size = new System.Drawing.Size(284, 24);
             this.tsmiPrintInvoiceWithOfficialHeader.Text = "پیش فاکتور با سربرگ رسمی";
             this.tsmiPrintInvoiceWithOfficialHeader.Click += new System.EventHandler(this.TsmiPrintInvoiceWithOfficialHeader_Click);
             // 
             // FrmFactorDetail2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1165, 555);
             this.Controls.Add(this.dgvFactorDetail);
